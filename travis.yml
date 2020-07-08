@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - stable
+cache:
+  directories:
+    - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: P7T7i0fl3jdEM5ug36Zm9upI6F7qVi7P36SYZ4ivzmEysoXY7z5zFPP27xOnBLVlFTF284g60W05jBzrFkscqsqVRqQngM1GnPnZCbH1uWF9nAntDtjAj8Yz0s7s3xo0V5cHv2doSNNUnfg2svF5jfikTT3hssmfGDLt5c8snPT8EUsMmtb9wXt8y+1KrwP7iN7Kdlf1F8RfUtxSlpPyb51MLnTURxZirkEAOXtvBic2DMtmYfvK0wLBE/imI4MiMMLrko78rNfReDEkqwM8bmvIpKyCUTPFCYtOR6tzIrsiNDovuPIOikdwZCm2GoA1Vyw7f8hIwuMQS5Y9w0BtAhaHzOMvEYTvEY85GmwYgq2FxeyKjXyurHLq7xsz7HOVitDDvgBiqVSwR8y3+5T8IVfQa2xk6aZAVrPkmSxKGhcRz2TZYZCa2v3ampLAsPRq8sZz9s1Z18I8t7b7NXw/WyjLScZqOsolLJJPP6Hl9k0oReBHTIijOyULAkkmoj2jZB/Cdl9yB3d75mQ/bIgeA9TNkyoKA/6Tc55Bw+DdYnbBRVhVOMB1LO8ZpQTQ6Xz20FYdNXSqwMyGC76Jd3PQ0rfpBqFNXY3hqKxAq8koUKKlYP1tvC7aMdYp7nJBaxVAm2+PruNk2vF81vszkVi/MYLvHvBKq1Q86CVNLKwEZmY=
+    app: didiface
+  on:
+    repo: Bednar22/DidiFaceApp
+script:
+  - echo "skipping tests "
